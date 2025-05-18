@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - iPortfolio Bootstrap Template</title>
+  <title>Family Cottage</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -15,10 +15,12 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
@@ -27,13 +29,56 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Updated: Jun 29 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
+  <style>
+    /* css/custom.css */
+
+    body {
+      /*
+    The order matters:
+    1. Specific Bengali font (e.g., 'Noto Sans Bengali') - This will be used for Bengali characters.
+    2. Specific Latin font (e.g., 'Roboto') - This will be used for English/Latin characters if the Bengali font doesn't contain them, or if it's explicitly preferred.
+    3. Generic fallback (sans-serif)
+    4. Bootstrap's system font variable (var(--bs-font-sans-serif)) - For robust fallback to native system fonts.
+    */
+      font-family: 'Noto Sans Bengali', 'Roboto', sans-serif, var(--bs-font-sans-serif);
+
+      /* General increase for better readability of both scripts. */
+      /* 1.05rem makes 16px default base font approx 16.8px */
+      font-size: 1.05rem;
+      line-height: 1.6;
+      /* Bangla text often benefits from slightly more line-height */
+    }
+
+    /* You can also target specific elements or languages for finer control */
+    [lang="bn"] {
+      /* If you need even more specific line height for Bangla text only */
+      line-height: 1.7;
+    }
+
+    /* Example of targeting a specific heading style */
+    h2 {
+      font-size: 2.75rem;
+      /* A slightly larger h1 than Bootstrap's default 2.5rem */
+    }
+
+    /*
+If you find that Bangla characters still look smaller than English ones
+at the same font-size, you can use these approaches:
+*/
+    p {
+      font-size: 1rem;
+      /* Default size for general paragraphs */
+    }
+
+    /* Target paragraphs specifically in Bangla content and make them slightly larger */
+    [lang="bn"] p {
+      font-size: 1.08rem;
+      /* A specific override for Bangla paragraphs */
+    }
+  </style>
+
+
 </head>
 
 <body class="index-page">
@@ -48,42 +93,30 @@
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
       <!-- Uncomment the line below if you also wish to use an image logo -->
       <!-- <img src="assets/img/logo.png" alt=""> -->
-      <h1 class="sitename">Alex Smith</h1>
+      <h1 class="sitename">Mr. Cyber Bloom</h1>
     </a>
 
-    <div class="social-links text-center">
+    <!-- <div class="social-links text-center">
       <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
       <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
       <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
       <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
       <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-    </div>
+    </div> -->
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
-        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-          <ul>
-            <li><a href="#">Dropdown 1</a></li>
-            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Deep Dropdown 1</a></li>
-                <li><a href="#">Deep Dropdown 2</a></li>
-                <li><a href="#">Deep Dropdown 3</a></li>
-                <li><a href="#">Deep Dropdown 4</a></li>
-                <li><a href="#">Deep Dropdown 5</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Dropdown 2</a></li>
-            <li><a href="#">Dropdown 3</a></li>
-            <li><a href="#">Dropdown 4</a></li>
-          </ul>
-        </li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        <li><a href="#1"><i class="bi bi-person navicon"></i> সংঘাতের ১ম পর্যায় </a></li>
+        <li><a href="#2"><i class="bi bi-person navicon"></i> সংঘাতের ২য় পর্যায় </a></li>
+        <li><a href="#3"><i class="bi bi-person navicon"></i> উগ্র জংগীবাদী মারুফ </a></li>
+        <li><a href="#4"><i class="bi bi-person navicon"></i> অর্পণ বড়াল </a></li>
+        <li><a href="#5"><i class="bi bi-person navicon"></i> মিকদাদ </a></li>
+        <li><a href="#6"><i class="bi bi-person navicon"></i> জালাল </a></li>
+        <li><a href="#7"><i class="bi bi-person navicon"></i> সিরাজ মিয়া </a></li>
+        <li><a href="#8"><i class="bi bi-person navicon"></i> আমার বিরুদ্ধে </a></li>
+        <li><a href="#9"><i class="bi bi-person navicon"></i> নিজেকে নিয়ে </a></li>
+        <li><a href="#10"><i class="bi bi-person navicon"></i> পুরোনো কথা </a></li>
+        <li><a href="#11"><i class="bi bi-person navicon"></i> সংঘাতের শেষ কোথায় </a></li>
       </ul>
     </nav>
 
@@ -91,699 +124,1294 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
+    <!-- Section 1-->
+    <section id="1" class="about section">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>Alex Smith</h2>
-        <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-      </div>
-
-    </section><!-- /Hero Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
+        <h3>১। দ্বন্দ্ব বা সংঘাতের শুরুর প্রথম পর্যায়</h3><br>
+        <p>
+          মারুফের সাথে আমার খুব ভাল সম্পর্ক ছিল। গত বছর ছাত্রদের বৈষম্য বিরোধী আন্দোলনের পর মারুফ জানায়, কুমিল্লায় তাদের
+          দোকান স্থানীয় লোকজন ভেঙে দিয়েছে এবং বাসায় এসে আমাকে জানায়, কোন এক মাজার পন্থীকে সে নিজে রাস্তায় পিটিয়েছে। গত
+          বছর
+          ২০ শে অক্টোবর এগুলো নিয়ে কথা হচ্ছিল এবং হঠাৎ করে আমাকে বললো, আপনাকে তো নামায পড়তে দেখি নাই। আপনি কাফের।
+          চোখ-মুখ
+          লাল করে, গলার রগ মোটা করে আমাকে কাফের বলছিল। আমি থতমত খেয়ে গেলাম, হঠাৎ বিনা কারণে এমন অভিযোগ শুনে। আমি তাকে যত
+          ভাবেই বোঝানোর চেষ্টা করলাম, সে বুঝতে রাজি না। এভাবে কাউকে কাফের বলা ঠিক না, সেটাও বলেছি। কতটা বিনীতভাবে নরম
+          সুরে
+          তাকে বলেছি, ভাই এভাবে কাউকে বলবেন। এই ব্যাপারে তার কঠোরতা, সত্যিই ভয়ংকর ছিল। তার রুম থেকে প্রায় সময়েই ওয়াজ
+          শুনি।
+          ধর্মীয় ইস্যু নিয়ে বাংলাদেশের পরিস্থিতি এমনিতেই খারাপ। তার উপর এই ছেলে সরাসরি এগুলোর সাথে জড়িত। এছাড়াও তার আপন
+          বড়
+          ভাই মার্ডার কেসের আসামী, জেল খেটেছে। মার্ডার ও করেছে। এগুলো তার স্টেটমেন্ট। এটা আমার কাছে ভাল লক্ষণ মনে হয় নি।
+          যেহেতু বর্ষন ভাই, মারুফকে ভাড়া দিয়েছে, মারুফের আইডি কার্ড আমার কাছে নেই। আমি ২১শে অক্টোবর তাকে হোয়াটসএপে কল
+          দিয়ে
+          আইডি কার্ড জমা দিতে বলি। এমনকি হোয়াটসএপ মেসেজেও এটা বলি। বলার সময় খুবই বিনীত ভাবে রিকোয়েস্ট করে বলেছি যে,
+        </p><br>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <p>
+          মামুন:
+          <i class="bi bi-quote quote-icon-left"></i>
+          <span>jodi kichu mone na koren, amar kache apnar NID card er photocopy and passport size er 2 copy chobi
+            agulo
+            nai. jara basa vara ney, sobar ai documents gulo joma deya lage. apni ki amak aktu message kore dite
+            parben?</span>
+          <i class="bi bi-quote quote-icon-right"></i>
+          <br><br>
+          মারুফ:
+          <i class="bi bi-quote quote-icon-left"></i>
+          <span>Vai aigulo deya hoiche, ami uthar por.. R aigulo thana te joma hoiche.</span>
+          <i class="bi bi-quote quote-icon-right"></i>
+          <br><br>
+          মামুন:
+          <i class="bi bi-quote quote-icon-left"></i>
+          <span>bhaia, amar kache ai information gulo nai. and barshan jodi apnar kach theke niyeo thake joma dey ni.
+            please apni kichu mone korben na.</span>
+          <i class="bi bi-quote quote-icon-right"></i>
+        </p><br>
 
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
+        <p>
+          তখন থেকে সে আমার উপর আরো রেগে গেছে। তারপর সম্ভবত প্রথমবারের মত সে আমার বিরুদ্ধে আপনার কাছে অভিযোগ করে। পাশের
+          রুমের ভাড়ার বিষয়টা নিয়ে সে তখন আরো বেশি সুযোগ পায়। ঠিক ৪ দিন পর ২৪শে অক্টোবর সে আমাকে মারতে আসে। আমার রুমে
+          ঢুকে
+          মারমুখী হয়ে আমাকে মারতে চেয়েছে। অলরেডী আমাকে মারার জন্য তার সুযোগ হয়ে গেছে। এটা আমার জন্য খুবই বিব্রতকর এবং
+          ভয়ংকর পরিস্থিতি ছিল। আমি কাউকেই কিছু বলি নি।
+        </p><br>
+
+        <p>
+          সে আমাকে মারার জন্য সুযোগ খুঁজছিল। যে কারণ দেখিয়ে সে আমাকে মারতে আসছিল সেটা যৌক্তিক কোন কারণ ছিল না। মিকদাদের
+          সাথে তখন রুম ভাড়ার ব্যাপারে আপনি(আন্টি) কথা বলেছিলেন। মিকদাদকে আপনি(আন্টি) জিজ্ঞেস করেছিলেন, সে কিভাবে এই
+          বাসার
+          খোঁজ পেল। মিকদাদ আপনাকে(আন্টি) বলেছিল, মামুন ভাইয়ের মাধ্যমে। মারুফকে তখন তার চেনার প্রশ্নই আসে না। আপনি(আন্টি)
+          হয়তোবা তখন মামুন না শুনে, মারুফ শুনেছিলেন এবং মারুফকে জিজ্ঞেস করেছিলেন, মিকদাদ কে? মারুফের নাম মিকদাদ কেন
+          বলেছে
+          আপনাকে, এই সামান্য একটা ভুল ধারণার জন্য উগ্র মারুফ তখন রাগে কাঁপছিল। মারুফ তখন সুযোগ পেয়ে গেছে আমাকে মারার,
+          এবং
+          তার আগে থেকেই মাথা গরম হয়ে ছিল। আমার রুমে ঢুকেছে মারমুখী হয়ে। আমার গায়ের উপর হাত তোলার মত অবস্থা ছিল। তার শরীর
+          কাঁপছিল মারার জন্য। আমি বার বার বলা সত্ত্বেও তার মাথায় ঢুকছিল না যে, আমি মিকদাদকে মারুফ নাম বলতে বলি নি। এই
+          অবস্থায় আমি একটাও সাউন্ড করি নি। আমি যদি তখন একটাও কথা বলতাম, একটু রেগে কথা বলতাম, অবস্থা খুবই খারাপ হয়ে যেত।
+          পরে গায়ে হাত তোলে নি, কিন্তু অনেক মিথ্যা অভিযোগ, গালি-গালাজ করেছে। হুমকি দিচ্ছিল বারবার আমাকে মারার।
+        </p><br>
+
+        <p>
+          তার পরদিন সে বাসায় আছে জেনে আমি তার সাথে কথা বলতে চাই। শুরুতে সে রেসপন্স করে নি। পরে যখন আমি আবারো নক করছিলাম,
+          তখন জানিয়েছে, সে আগে শুক্রবারের জুমার নামায পড়বে। তারপর আমাকে সময় দেবে। যাইহোক, নামাযের পর আমি তাকে হোয়াটসএপে
+          ২
+          টা অডিও রেকর্ড পাঠাই। সেই রেকর্ডের স্ক্রীণশট নিচে আছে। এবং যে কোন সময় সেটা আমি দিতে পারব। সেই দুটি রেকর্ডের
+          হুবুহু কথা আমি নিচে কোট করে লিখে দিলাম।
+        </p><br>
+
+        <p>
+          আমার ১ম রেকর্ড:
+          <i class="bi bi-quote quote-icon-left"></i>
+          <span>ভাই, আমি আপনাকে যেটা বলতে চেয়েছি যে, আপনি এখানে আছেন, আমি এখানে আছি, আমাদের যার যেই দোষই
+          থাকুজ,
+          বা যেই গুণই থাকুক না কেন, দেখা যাচ্ছে প্রতিদিনই আমাদের দেখা হচ্ছে, আমরা যদি যে কোন বিষয় নিয়ে রাগারাগি করি,
+          আমরা
+          প্রত্যেকে আনকমফোর্টেবল ফীল করব। আপনি এখানে থাকতে আনকমফোর্টেবল ফীল করবেন, আমিও আনকমফোর্টেবল ফীল করব। তাহলে
+          আমাদের
+          রাগারাগি করারতো দরকার নেই।</span>
+          <i class="bi bi-quote quote-icon-right"></i>
+          <br><br>
+          আমার ২য় রেকর্ড:
+          <i class="bi bi-quote quote-icon-left"></i>
+          <span>যে কোন কিছু নিয়ে রাগারাগি, মারমুখী হওয়া, এইটার রেসাল্টতো ভাল কিছু হয় না। এটা জাস্ট আমার
+          ইক্সপেকটেশন যে, আমাদের এমন রাগারাগি যাতে না হয়। আমি এটা খুব বিনীতভাবে বলছি। নিশ্চই বুঝতে পারছেন, এখানে আমার
+          অন্য
+          কোন ইনটেনশন নাই। আপনি যাতে আনকমফোর্টেবল ফীল না করেন, আমিও যাতে আনকমফোর্টেবল ফীল না করি। কারণ প্রতিদিনই আমাদের
+          মধ্যে দেখা হবে, কিন্তু মনের মধ্যে আমরা যদি এই ধারণাগুলো রেখে দেই, এবং এভাবে যদি কথা বলতে থাকি, একটা সময় গিয়ে
+          দেখবেন যে, আর ভালো লাগছে ন। তো সেই বিষয়টা আমি চাই না। যতটুকু হয়েছে, যা হয়েছে দ্যাটস ফাইন। নতুন করে চিন্তা
+          করেন।</span>
+          <i class="bi bi-quote quote-icon-right"></i>
+        </p><br>
+
+        <p>
+          এই অডিও রেকর্ড গুলো পাঠানোর পর, আমি আশা করেছিলাম তার(উগ্র জঙ্গীবাদী মারুফের) রিপ্লাইটা আমার মতই পজিটিভ কিছু
+          হবে।
+          কিন্তু তার রিপ্লাই অসন্তোষজনক এবং নেগেটিভ ভাইব দেয় এমন ছিল। এরপর থেকে সে কখনোই আমাকে ভালভাবে নেয় নি। এমনকি
+          রমযানে আপনি যেই ইফতার এর আয়োজন করেছিলেন, সেটা সে একসাথে করতে চায় নি, একাই আলাদা করে ইফতার করতে চেয়েছে।
+          পরবর্তীতে
+          অন্যরা যখন ইফতারে আমার রুমে আসে তখন সে অনিচ্ছাতেই এসে সবার সাথে জয়েন করে।
+        </p><br>
+
+        <p>
+          সেদিন থেকে আজকে পর্যন্ত নানা সময় তার সাথে কথা বলতে হয়েছে। কিন্তু সুযোগ পেলেই ইনডিরেক্টলি ইনসাল্ট করে কথা বলেছে
+          এবং আমাকে পেটানোর হুমকি দিয়েছে। সেই কথা গুলোর কোন তথ্য আমার কাছে নেই, তাই সেগুলো নিয়ে খুব বেশি কিছু বলছি না।
+          লাস্ট ইন্টারনেটের লাইন নিয়ে আমাকে ২-৩ বার চেন্জ করার জন্য বলেছে কারণ আমাদের রাউটারে (ডিভাইস) প্রবলেম আছে। এই
+          ইন্টারনেটের লাইন আন্টি আপনি নিয়েছিলেন এবং এটা এখানকার সবচেয়ে ভাল সার্ভিস। আমি পরদিনই ব্রিস্ক ইন্টারনেটের লোক
+          এনে
+          সব চেক করালাম এবং তারা আমাকে দেখিয়ে দিল, তাদের লাইনের স্পীড ভাল কিন্তু আমাদের বাসার রাউটার ভাল না, তাই প্রবলেম
+          হচ্ছে। মারুফকে আমি তখন জানালাম, রাউটারে প্রবলেম। রাউটার ঠিক করার পরেও প্রবলেম থাকলে অবশ্যই ইন্টারনেট এর লাইন
+          পরিবর্তন করব। কিন্তু সে গোয়ার্তুমি করছিল লাইন পরিবর্তন করার জন্য। নিচে হোয়াটসএপের স্ক্রীণশট দেয়া হল।
+        </p><br>
+
+        <p>
+          আমি এটাও বলেছি, আপনি অন্য একটা লাইন নিয়ে আসেন, সেটা ভাল হলে, তখন আমি এটা বাদ দিয়ে দেব। এখানেতো কাউকে জোর করার
+          কিছু নেই। প্রত্যকেই একটা করে আলাদা ইন্টারনেটের লাইন নিয়ে আসতে পারে। এটার জন্য আপনাকেও(আন্টি) জানানোর প্রয়োজন
+          নেই। আপনি(আন্টি) ইন্টারনেট নিয়ে আমাকে জিজ্ঞেস করার আগের দিন, হঠাৎ করে দেখি, লোকজন এসে নতুন লাইন সেট করছে।
+          সেখানে
+          মিকদাদ ও অর্পন বড়াল দাঁড়িয়ে আছে। আমি কিছুই জানি না। হঠাত করে এটা দেখে আমি একটু থতমত খেয়ে গেলাম। তখন সবার সামনে
+          মারুফ আমাকে অপমান করে বলছিল, এই লাইনের ইন্টারনেট আমার রুম পর্যন্ত আসবে না। আমি কিছু বলি নি, যা বোঝার বুঝে
+          নিলাম।
+          আপনি(আন্টি) যখন দুইদিন আগে আমাকে ইন্টারনেটের লাইন নিয়ে জিজ্ঞেস করলেন, তখন আমি অবাক হয়ে গেলাম। এটা আপনার(আন্টি)
+          কাছে বলার কি আছে? আপনি আমাকে ইন্টারনেট লাইন নিয়ে জিজ্ঞেস করার পর, বর্ষণ ভাইও আমাকে মেসেজ দিয়ে জিজ্ঞেস করে,
+          "লাইট
+          নিয়ে কি সমস্যা হয়েছে? উগ্র জঙ্গীবাদী মারুফ নাকি রেগে বাসা ছেড়ে চলে যাবে?" আমি আকাশ থেকে পড়লাম, কোথা থেকে কি
+          হচ্ছে বুঝতে পারলাম না। তার পরদিন আপনি(আন্টি) আমাকে কল দিয়ে বললেন, মারুফ এবং অন্য দুইজন আমার বিরুদ্ধে গ্রুপে
+          লিখছে। এই প্রথম শুনলাম, আপনাকে(আন্টি) নিয়ে তারা গ্রুপ খুলেছে।
+        </p><br>
+
+        <p>
+          গত বছর ২৫ শে অক্টোবর আমি তাকে যেই কথাগুলো বলি, সেটা আজকে সত্যি হচ্ছে। তাকে বলেছিলাম, কেউ অন্যায় করলেও একই
+          বাসায়
+          থাকলে কখনো কাউকে হিংসা, অপমান, হুমকি, গালাগালি, মারামারি, এগুলো করতে নেই। নয়তো পরে এক সময় আসবে, যখন আপনি
+          আনকমফোর্ট ফীল করতে থাকবেন। আজকে তার ক্ষেত্রে তাই হচ্ছে। এটা তার কাজের ফলাফল। আমি এমন কোন বাজে কাজ, বাজে কথা,
+          বাজে ব্যবহার, অপমানজনক কথা, হিংসা করা, হুমকি দেয়া, গালাগালি করা, কাউকে মারতে যাওয়া এইগুলো কখনো করি নি। এইজন্য
+          আমার কারো প্রতি এই ধরণের কোন অনুভূতি নেই।
+        </p>
+      </div>
+
+
+
+      <!-- Gallery Section -->
+      <div class="portfolio section light-background">
+
+        <!-- Gallery Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <p>নিচে কিছু স্ক্রীণশট দেয়া হল</p><br>
+        </div><!-- End Gallery Title -->
+
+        <div class="container">
+
+          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+            <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-product">Product</li>
+            </ul><!-- End Portfolio Filters -->
+
+            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h3>App 1</h3><br>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p><br>
+                    <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                        class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h3>Product 1</h3><br>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p><br>
+                    <a href="assets/img/portfolio/product-1.jpg" title="Product 1"
+                      data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
+                        class="bi bi-zoom-in"></i></a>
+                    <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                        class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+            </div><!-- End Portfolio Container -->
+
           </div>
-          <div class="col-lg-8 content">
-            <h2>UI/UX Designer &amp; Web Developer.</h2>
-            <p class="fst-italic py-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>email@example.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                </ul>
-              </div>
-            </div>
-            <p class="py-3">
-              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.
-            </p>
-          </div>
+
         </div>
 
       </div>
+      <!-- /Gallery Section -->
 
-    </section><!-- /About Section -->
 
-    <!-- Stats Section -->
-    <section id="stats" class="stats section">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+    </section>
+    <!-- /Section 1-->
 
-        <div class="row gy-4">
+    <!-- Section 2-->
+    <section id="2" class="about section">
 
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hard Workers</strong> <span>rerum asperiores dolor</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Stats Section -->
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section light-background">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Skills</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h3>
+          ২। দ্বন্দ্ব বা সংঘাতের দ্বিতীয় পর্যায়
+        </h3><br>
 
-        <div class="row skills-content skills-animation">
 
-          <div class="col-lg-6">
+        <p>
+          লাস্ট ঈদেও আমি বাড়ি যাবার আগে পুরো বাসা ডীপ-ক্লীন করেছি। আমাকে কেউই কখনো হেল্প করে নি। এই ফ্ল্যাটের ফ্লোর
+          টাইলসের নয়। অনেক বেশি ময়লা হয়। সাধারণত রেগুলার না মুছলে সেই ময়লা কালো হয়ে শক্ত হয়ে যায়। পরে আর সেটা ক্লীন হয়
+          না।
+          এই ফ্লোরে ব্লিচিং পাউডার খুব বেশি পরিষ্কার করে না। বাজারের ক্লীনার বেশি করে দিলে কিছুটা পরিষ্কার হয়, কিন্তু
+          ধবধবে হয় না। যাই হোক আমি আরও কিছু মেডিসিন কিনে এই ফ্লোর ক্লীন করি। ফ্লোর কেউ পরিষ্কার করে না। লাস্ট ঈদে যখন
+          ক্লীন করেছি, সেটার ছবি এবং ভিডিও আমার কাছে আছে। কিছু ছবি দিচ্ছি আপনাকে নিচে।
+        </p><br>
 
-            <div class="progress">
-              <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
+        <p>
+          মারুফ এখানে প্রায় বছর খানেক ধরে আছে ক্লীনিং এর জন্য সে কখনো কাজও করে নি, খরচ ও করে নি। মিকদাদ, অর্পন এখানে
+          প্রায়
+          ৫ মাস ধরে আছে। এরাও কখনো ক্লীন করে নি, কখনো খরচ ও করে নি। আমি ময়লা একদমই পছন্দ করি না। আমি নিজেই এই কাজ গুলো
+          করি। আমাকে কেউ আজকে পর্যন্ত এই কাজে হেল্প ও করে নি। লাস্ট ঈদে সবাই বাড়ি চলে গেলে, আমি পুরো বাসা ডীপ-ক্লীন করি।
+          ফ্রীজে কারও শাকসব্জী পঁচে গেলে আমি ফেলে দেই। এমনকি ফ্রীজে মাছ-মাংসের রক্ত থাকলে সেটা পরিষ্কার করি। অন্যেরা
+          ফ্রীজ
+          ব্যবহার করে, সেখানে তাদের বাটি থেকে ফ্রীজে ঝোল পড়ে। সেটাও ক্লীন করি। ঘরের মধ্যে প্রচুর মাকড়সার বাসা হয়, সেটাও
+          ক্লীন করি। এছাড়াও প্রতিদিন আমি একবার করে কিচেন ক্লীন করি। কিচেনের বেসিন, গ্যাসের চুলা, নিচে পড়ে থাকা ময়লা সব
+          আমাকে ক্লীন করতে হয়।
+        </p><br>
 
-            <div class="progress">
-              <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
+        <p>
+          লাস্ট ঈদের আগে যখন আমি পুরো বাসা ডীপ-ক্লীন করতে যাই তখন আমার মপ টা ভেংগে যায়। আমি যে এই কাজগুলো করছি, এটা সবাই
+          দেখেও না দেখার ভান করে। বাসা ময়লা করার সময় চিন্তা করে না, তার ময়লা আরেকজন ক্লীন করে দিচ্ছে। তারা যাতে বুঝতে
+          পারে
+          এজন্য সবাইকে ঈদের শুভেচ্ছা জানিয়ে ছবি পাঠাই। এবং একটা মেসেজ দেই যাতে সবার একটু সচেতনতা তৈরি হয়। মেসেজের লেখা
+          আমি
+          হুবুহু বাংলায় এখানে লিখে দিচ্ছি, সেই সাথে স্ক্রীণশট ও দিচ্ছি।
+        </p><br>
 
-            <div class="progress">
-              <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
+        <p>
+          "আশা করি চমতকার ঈদ মোবারক আসবে, তোমাদের খুব ভালো কাটবে! আমি ঘর পরিষ্কার করেছি এবং পরিষ্কারের আগে আমাকে কিছু
+          কিনতে হয়েছিল। যদি তুমি কন্ট্রিবিউট করতে চাও, তাহলে এপ্রিল মাসের ইন্টারনেট বিলের সাথে আরও ২০০ টাকা যোগ করে
+          দিও,
+          তবে এটা বাধ্যতামূলক নয়।"
+        </p><br>
 
-          </div>
+        <p>
+          এটা নিয়ে অর্পন বড়াল পজেটিভ রেসপন্স করেছে। কিন্তু অন্যেরা কেউ কোন রেসপন্স করে নি। প্রত্যকের হোয়াটসএপ হিস্ট্রিতে
+          এগুলো আছে। কারণ রেসপন্স করতে গেলে যদি তাদের কাজ করতে হয় অথবা টাকা-পয়সা খরচ হয়। আমি যেহেতু বলেছি, কারো ইচ্ছা
+          হলে
+          টাকা দেবে, নয়তো দেবে না। এপ্রিল মাসে অবাক হয়ে দেখলাম গত ১ বছরের মধ্যে মারুফ এই প্রথমবারের মত ২০০ টাকা যোগ করে
+          আমার একাউন্টে পাঠিয়েছে। আমার অবাক হওয়ার কারণ ছিল, এত কিছু করলাম সামান্য একটা ধন্যবাদ দূরে থাকুক, রিপ্লাই
+          পর্যন্ত
+          করে নি। অন্যরা আর কেউই টাকা দেয় নি। এখানে টাকার এমাউন্ট আসলে কিছুই না, এটা ছিল একটা নামমাত্র টোকেন মানি। আমি
+          ক্লীনিং এর জন্য প্রচুর টাকা খরচ করি। সেটাও আপনাকে(আন্টি) পরে দেখাবো। অর্পন আমাকে বলেছে সে টাকা দেবে। মার্চ এর
+          ক্লীনিং শেষে এখন মে মাস। এর মাঝে তো রেগুলার আমি ক্লীনিং এর কাজ করি। অন্য কেউ করে না। এখানে সামান্য ২০০ টাকা,
+          তাও
+          আবার ২ মাস হয়ে গেছে। এখানে টাকার এমাউন্টের চেয়েও কন্ট্রিবিউশন গুরুত্বপূর্ণ, কারণ তাহলে তারা ময়লা কম করবে,
+          ক্লীন
+          রাখার চেষ্টা করবে। আমার উদ্দেশ্য আসলে সেটাই ছিল। যেহেতু সে বলেছে টাকা দেবে, আমি এই মে মাসে তাকে টাকার কথা মনে
+          করিয়ে দিলে, অর্পন বলে: "এই ২০০ টাকা নাকি তার কাছে বোঝা মনে হয়"। যখনি বলেছে এটা "বোঝা", তখন আমার মেজাজ খারাপ
+          হয়ে
+          গেছে। কারণ তাদের ময়লা আমি প্রতিদিন ক্লীন করে যাচ্ছি, সেখানে আমি নাকি তার উপর অনেক বোঝা চাপিয়ে দিয়েছি। ৫ মাসে
+          তাকে টোকেন মানি ২০০ টাকার কথা বলেছি, তাও দিতেই হবে সেটা বলিনি। এই ছেলে ভুলে গেছে, সে আমার কেনা ২০০০ টাকার
+          পর্দা
+          আমি তাকে ফেরত নেব না বলে দিয়ে দিয়েছি। সে তার রুমে কাঁচের গ্লাস ঢাকার জন্য সেটা ব্যবহার করছে। নিচের ছবিটা
+          দেখেন।
+        </p><br>
 
-          <div class="col-lg-6">
+        <p>
+          আমি মুখে প্রচন্ড বিরক্তি নিয়ে বলেছি, আমার সাথে এটা নিয়ে আর কথাই বোলো না। আর কিছুই বলি নি। তৎক্ষণাৎ সে মারুফের
+          কাছে গিয়ে বিচার দেয়। উগ্র জঙ্গীবাদী মারুফ এই সুযোগের জন্য অপেক্ষা করছিল। তখন এই কট্টরপন্থী মারুফ আমাকে চার্জ
+          করে
+          বলেছে, আপনি ওর কাছে টাকা চাচ্ছেন কেন? এই এপ্রোচ এমন ছিল, সেটা আমার কাছে স্বাভাবিক মনে হয় নি। আমার কাছে মনে
+          হচ্ছিল, সে নিজে কন্ট্রিবিউট করে, অন্যদেরকে উস্কে দিয়েছে এবং ঠিক এই সময়টার জন্য সে অপেক্ষা করছিল। আমি আগেই
+          বলেছিলাম, তার টোকেন মানি ২০০ টাকার কন্ট্রিবিউশন আমাকে অবাক করেছে।
+        </p><br>
 
-            <div class="progress">
-              <span class="skill"><span>PHP</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
+        <p>
+          এখানে শুধুমাত্র মারুফ আমাকে ২০০ টাকা দিয়েছে, সেটা ছিল বিশেষ উদ্দেশ্যে। কারণ সে আমাকে মেসেজে কোন ধন্যবাদ জানায়
+          নি, কোন রেসপন্সই করে নি। সেই বিষয়গুলো পর্যবেক্ষণ করলে বোঝা যায়, হঠাত করে আমাকে ২০০ টাকা পাঠানোর পেছনে তার
+          উদ্দেশ্য ছিল। শেষ পর্যন্ত, অর্পণ বড়াল বা মিকদাদ কেউই টাকা দেয় নি। কিন্তু সবাই পুরোপুরি আমার বিরুদ্ধে চলে যায়।
+        </p><br>
 
-            <div class="progress">
-              <span class="skill"><span>WordPress/CMS</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
+      </div>
 
-            <div class="progress">
-              <span class="skill"><span>Photoshop</span> <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
+
+      <!-- Gallery Section -->
+      <div class="portfolio section light-background">
+
+        <!-- Gallery Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <p>নিচে কিছু স্ক্রীণশট দেয়া হল</p><br>
+        </div><!-- End Gallery Title -->
+
+        <div class="container">
+
+          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+            <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-product">Product</li>
+            </ul><!-- End Portfolio Filters -->
+
+            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h3>App 1</h3><br>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p><br>
+                    <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                        class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h3>Product 1</h3><br>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p><br>
+                    <a href="assets/img/portfolio/product-1.jpg" title="Product 1"
+                      data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
+                        class="bi bi-zoom-in"></i></a>
+                    <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                        class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+            </div><!-- End Portfolio Container -->
 
           </div>
 
         </div>
 
       </div>
+      <!-- /Gallery Section -->
 
-    </section><!-- /Skills Section -->
 
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
+    </section>
+    <!-- /Section 2-->
 
-      <!-- Section Title -->
+    <!-- Section 3-->
+    <section id="3" class="about section">
+
       <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
 
-      <div class="container">
+        <h3>
+          ৩। উগ্র জংগীবাদী মারুফকে নিয়ে কিছু কথা
+        </h3><br><br>
 
-        <div class="row">
+        <p>
+          গত বছর ছাত্রদের বৈষম্য বিরোধী আন্দোলনের পর মারুফ জানায়, কুমিল্লায় তাদের দোকান স্থানীয় লোকজন ভেঙে দিয়েছে। এবং
+          বাসায় এসে আমাকে জানায়, কোন এক মাজার পন্থীকে সে নিজে রাস্তায় পিটিয়েছে। তারও আগে সে আমাকে জানিয়েছিল, এই এলাকা
+          এবং
+          তার আশেপাশে দীর্ঘদিন ধরে সে আছে। এখানকার চোর-বাটপার সম্পর্কে সে ভাল করে জানে। এখানে তার অনেক আত্মীয় স্বজন আছে।
+          এই বাসায় একদিন থাকলে, আত্মীয় স্বজনদের বাসায় দুই দিন থাকে। খুব বেশি রান্নাও করতে দেখি না, আত্মীয়দের বাসায় খেয়ে
+          আসে। তাতে বোঝা যায়, তার কথাগুলো সত্যি। তার বাবা, মা মারা গেছেন, বড় হয় মামার পরিবারের সাথে। কিন্তু কয়েকটা আপন
+          বড়
+          ভাই আছে। এক আপন বড় ভাইয়ের কথা আমাকে বলেছে, যিনি ঢাকাতেই মার্ডার কেসের আসামী। আমি জিজ্ঞেস করেছিলাম, শুধু কি
+          মার্ডার কেসের আসামী? সে বলেছে, না। তার ভাই সত্যিই কয়েক মার্ডারের সাথে জড়িত ছিল এবং কয়েকবার জেল খেটেছে। তার
+          ভাইয়ের যাত্রাবাড়ি এলাকার আশেপাশে আড্ডা ছিল। এখন সম্ভবত ঢাকাতেই কোথাও হয়তো চাকরী করে। এই এলাকায় সে(মারুফ)
+          যেহেতু
+          দীর্ঘদিন ধরে আছে, এখানে সে একটা বাসা কিনতে চায়। বর্ষণের কাছ থেকে তানজীদের বিষয়ে শুনেছে। বর্ষণ এই বাসা ৩০-৪০
+          লাখ
+          টাকা হলেও বিক্রি করে দেবে, এগুলো সে জানে। কথায় কথায় তখন আমাকে বলেছিল, এভাবে তার পরিচিত কয়েকজন বাসা দখল করেছে।
+          তার নিজের এক ক্লাসমেট ও আছে, যে এভাবে বিয়ে করে ঢাকায় বাসা পেয়ে গেছে। তার সেই ক্লাসমেট সম্ভবত ইউল্যাবে এ
+          পড়াশোনা
+          করতো। এভাবে খুব সহজেই বাসা দখল করা যায়, যদি মহিলা বিদেশ থাকে। এর কয়েক মাস পর এক লোক বর্ষণের পাশের রুমে উঠে, যে
+          কোন কাজ করতো না, ঘরের মধ্য আন্ডারওয়ার পরে ঘুরতো, মদ খেয়ে রাতের ২ টায় বাসায় আসতো। মারুফ আমাকে এই লোকের বাড়ি
+          বসিলার কোথায় এবং ওই এলাকার লোকজন কিভাবে ছিনতাই করে, মার্ডার করে সব কিছু ডিটেইলসে বলেছিল। মারুফের কথা শুনে
+          বুঝতে
+          পারলাম সে এখানে আশেপাশের এলাকা সম্পর্কে ভাল করেই জানে। উপরের আলোচনা গুলো এখানে তুলে ধরেছি, কারণ তাতে একটা
+          মানুষের ব্যাকগ্রাউন্ড সম্পর্কে কিছুটা ধারণা পাওয়া যেতে পারে। এই আলোচনাগুলো হয়েছে গল্প করতে গিয়ে, কারণ তখন তার
+          সাথে ভাল সম্পর্ক ছিল। এই উগ্র জঙ্গীবাদীর মারমুখী হয়ে আমাকে পেটাতে আসা, হুমকি দেয়া, অপমান করা, সব সময় ওয়াজ
+          শোনা,
+          মাজার পন্থী এক লোককে রাস্তায় পেটানো, ভাইয়ের যাত্রাবাড়ি এলাকার আড্ডা, মার্ডার করা, জেল খাটা, তার প্রাইভেট
+          ইউনিভার্সিটিতে পড়া ক্লাসমেটের বিয়ের লোভ দেখিয়ে বাড়ি দখলের মত বিষয়গুলো যখন সে আমাকে বলেছিল, বিভিন্ন সময় বিভিন্ন
+          পরিস্থিতির মধ্যে বলেছে। তথ্য-প্রমাণ বলতে যা বোঝায় তেমন কিছু আমার কাছে নেই। যেহেতু আমার নিরাপত্তার বিষয় এখানে
+          জড়িত তাই জানিয়ে রাখলাম।
+        </p><br>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Sumary</h3>
+        <p>
+          এই ২০০ টাকার ঘটনার আগে আগে ফ্ল্যাটের সামনে সিঁড়ির গোড়ায় মারুফ বিরিয়ানি খেয়ে গরুর হাঁড়-গোড় ফেলে রেখেছিল। সেটা
+          সে
+          পরিষ্কার করে নি। পাশের বাসা থেকে কমপ্লেইন এসেছে এই ময়লা নিয়ে। তাকে জিজ্ঞেস করার পর সে স্বীকার করে নি। অথচ আমরা
+          সবাই জানি, সিঁড়ির সামনে সে ছাড়া অন্য কেউ ময়লা রাখে না। এই ধরণের বিরিয়ানি সেই শুধু খায়। এই হাঁড়-গোড় জালালকে
+          তিনদিন ধরে রিকোয়েস্ট করে আমি তাকে দিয়ে ক্লীন করিয়েছি। নিচে এটার ছবি দিলাম।
+        </p><br>
 
-            <div class="resume-item pb-0">
-              <h4>Brandon Johnson</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
-              <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
+        <p>
+          কিচেনে মারুফের একটা পোড়া পাতিল ডিমের খোসা সহ, পানিসহ পড়ে আছে এক মাস ধরে। আমি বলেছি এটা সরাতে। পাত্তা দেয় নি।
+          নিচের এর ছবি দিলাম।
+        </p><br>
 
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-            </div><!-- Edn Resume Item -->
+      </div>
 
-            <div class="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
-            </div><!-- Edn Resume Item -->
 
-          </div>
+      <!-- Gallery Section -->
+      <div class="portfolio section light-background">
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
-              <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
+        <!-- Gallery Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <p>নিচে কিছু স্ক্রীণশট দেয়া হল</p><br>
+        </div><!-- End Gallery Title -->
 
-            <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
-              <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
+        <div class="container">
+
+          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+            <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-product">Product</li>
+            </ul><!-- End Portfolio Filters -->
+
+            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h3>App 1</h3><br>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p><br>
+                    <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                        class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h3>Product 1</h3><br>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p><br>
+                    <a href="assets/img/portfolio/product-1.jpg" title="Product 1"
+                      data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
+                        class="bi bi-zoom-in"></i></a>
+                    <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                        class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+            </div><!-- End Portfolio Container -->
 
           </div>
 
         </div>
 
       </div>
+      <!-- /Gallery Section -->
 
-    </section><!-- /Resume Section -->
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section light-background">
+    </section>
+    <!-- /Section 3-->
 
-      <!-- Section Title -->
+    <!-- Section 4-->
+    <section id="4" class="about section">
+
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
 
-      <div class="container">
+        <h3>
+          ৪। অর্পণ বড়ালকে নিয়ে কিছু কথা
+        </h3><br>
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+        <p>
+          অর্পন বড়াল, এই ছেলে পাশের ফ্ল্যাটে থাকত। আমাদের বাসায় শিফট করার সময় আমি তার ফার্ণিচার ধরে টেনে নিয়ে আসছি। এই
+          কাজ
+          গুলো আমি আপনার পক্ষ হয়ে করেছি। কারণ তখন যদি তাকে হেল্প না করতাম, হয়তো রুম বুকিং হতে দেরি হত। তখন দেখেছি,
+          তার(অর্পন বড়াল) আগের বাসার কিচেন ভয়ংকর নোংরা। সে ওই নোংরার মধ্যে ছিল। আমার কেনা ২০০০ টাকার পর্দা তাকে ফেরত
+          দিতে
+          হবে না বলে দিয়েছে যাতে সে কাঁচের রুমে ব্যবহার করতে পারে। বাড়তি যেন কোন টাকা লাগে। পর্দার জন্য বাড়তি টাকা
+          লাগলে,
+          সে হয়ত বলত, এখানে থাকব না। তাকে নানা ভাবে হেল্প করেছি আপনার স্বার্থে। এই বিষয়গুলো আপনাকে কখনো বলতে যাই নি। এখন
+          সে বলছে আমি তার উপর বোঝা চাপিয়ে দিয়েছি। আমাকে নিয়ে ভয়ংকর সব কথা আপনাকে প্রতিদিন লিখছে। সে ভুলে গেছে, এখনো সে
+          আমার ২০০০ টাকার পর্দা কাঁচের পার্টিশন ঢাকার জন্য ব্যবহার করছে যেটা আমি তার কাছ থেকে ফেরত নেব না বলেছি।
+        </p><br>
 
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Product</li>
-            <li data-filter=".filter-branding">Branding</li>
-            <li data-filter=".filter-books">Books</li>
-          </ul><!-- End Portfolio Filters -->
+        <p>
+          এই ২০০ টাকার ঘটনার আগে আগে ফ্ল্যাটের সামনে সিঁড়ির গোড়ায় মারুফের বিরিয়ানি খেয়ে গরুর হাঁড়-গোড় ফেলে রাখার ঘটনা
+          অর্পন বড়াল আমাকে জানায়। তখন অর্পন আমাকে ইংগিতে জানালো আমি যাতে মারুফকে নিষেধ করি। আমি তাকে বললাম, আমার উপর
+          চাপিয়ে না দিয়ে তুমি দায়িত্ব নিয়ে বলতে পার। তুমি কেন বল না? আমার এই ধরণের কথা তার কাছে ব্লেইম মনে হয়েছে। সে
+          এটাকে
+          ভালভাবে নেয় নি। তখন কথায় কথায় সে আমাকে ইনডিরেক্টলি বলেছে, আমি ভালো লোক না। আমার নামে সে অনেক কিছু শুনেছে।
+          মিকদাদের সাথে তার সম্পর্ক আড্ডা দিয়ে গল্প করার মত ভাল নয়। জালালের সাথেও তার সম্পর্ক ভালো না। বাকি আছে শুধু
+          মারুফ। আমি বুঝলাম মারুফ তার সাথে গ্রুপিং করছে।
+        </p><br>
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
 
       </div>
 
-    </section><!-- /Portfolio Section -->
 
-    <!-- Services Section -->
-    <section id="services" class="services section">
+      <!-- Gallery Section -->
+      <div class="portfolio section light-background">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
+        <!-- Gallery Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <p>নিচে কিছু স্ক্রীণশট দেয়া হল</p><br>
+        </div><!-- End Gallery Title -->
 
-      <div class="container">
+        <div class="container">
 
-        <div class="row gy-4">
+          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-            </div>
-          </div>
-          <!-- End Service Item -->
+            <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-product">Product</li>
+            </ul><!-- End Portfolio Filters -->
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Dolor Sitema</a></h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-            </div>
-          </div><!-- End Service Item -->
+            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-            </div>
-          </div><!-- End Service Item -->
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h3>App 1</h3><br>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p><br>
+                    <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                        class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            </div>
-          </div><!-- End Service Item -->
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h3>Product 1</h3><br>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p><br>
+                    <a href="assets/img/portfolio/product-1.jpg" title="Product 1"
+                      data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
+                        class="bi bi-zoom-in"></i></a>
+                    <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                        class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Eiusmod Tempor</a></h4>
-              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 40
-                },
-                "1200": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 1
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-              </div>
-            </div><!-- End testimonial item -->
+            </div><!-- End Portfolio Container -->
 
           </div>
-          <div class="swiper-pagination"></div>
+
         </div>
 
       </div>
+      <!-- /Gallery Section -->
 
-    </section><!-- /Testimonials Section -->
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
+    </section>
+    <!-- /Section 4-->
 
-      <!-- Section Title -->
+    <!-- Section 5-->
+    <section id="5" class="about section">
+
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h3>
+          ৫। মিকদাদকে নিয়ে কিছু কথা
+        </h3><br>
 
-        <div class="row gy-4">
+        <p>
+          মিকদাদ আগে থাকত বাড্ডাতে। মিকদাদ শুরু থেকেই প্রচুর ময়লা করতো। এখানে আসার পর এক-এক করে তাকে আমার শেখাতে হয় অনেক
+          কিছু। একদিন ঝাড়ু দিয়ে তার রুমের সব ময়লা ফ্রীজের নিচে রেখে দিয়েছে। জিজ্ঞেস করলাম "এই ময়লা ফ্রীজের নিচে কেন?"
+          তাগড়া বয়স্ক একটা লোক যদি উত্তর দেয়: "ভাই তাইলে এটা কোথায় ফেলবো?" আমি অবাক হলাম এটি শুনে যে, একটা তাগড়া বয়স্ক
+          ছেলে বলছে, সে জানে না যে, তার রুমের ময়লা কোথায় ফেলতে হবে। কিন্তু এটা জানে, এগুলো ফ্রীজের নিচে ঢুকিয়ে রাখতে
+          হবে।
+        </p><br>
 
-          <div class="col-lg-5">
+        <p>
+          এক থেকে দেড় মাস তার সব ময়লা আমাকে পরিষ্কার করতে হতে। ধৈর্য ধরে ট্রেনিং দিয়ে শেখাতে হয়েছে। এখন ময়লা আগের মত এত
+          বেশি করে না। কিন্তু তারপর ও প্রতিদিন তার করা ময়লা আমাকে ক্লীন করতে হয়। ফ্রীজে পাতিল না রাখা নিয়ে বলতে হয়।
+          অসংখ্য
+          বার আমাকে বলেছে, "ভাইয়া, ভুল হয়ে গেছে"। প্রতিবার আমি তাকে উৎসাহ দিয়েছি। বার বার বলেছি, আপনার অনেক ইমপ্রুভ
+          হয়েছে।
+          আমি তো তার বাবা বা বড় ভাই না, যে আমাকে ধরে ধরে তাকে এগুলো শেখাতে হবে। আমি এই কাজগুলো করি, যাতে পরিবেশ পরিষ্কার
+          পরিচ্ছন্ন থাকে। ঘরের সম্পদ যাতে নষ্ট না হয়।
+        </p><br>
 
-            <div class="info-wrap">
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+        <p>
+          তার ভেজা কাপড় আমি তাকে আমার বারান্দায় শুকাতে দেই। কিছুদিন ধরে এখন আমার বারান্দায় শুকায় না।
+        </p><br>
+
+        <p>
+          দরজা বন্ধ করতো এত জোরে আমার রুম পর্যন্ত কেঁপে উঠত। অর্পন বড়াল এটা নিয়ে আমাকে কমপ্লেইন পর্যন্ত করেছে যে, তার
+          কাঁচের দরজা কাঁপতে থাকে। তাকে বার বার ধৈর্য ধরে আমাকে বলতে হয়েছে।
+        </p><br>
+
+        <p>
+          আমি ফ্রীজে প্রত্যেকের জায়গা আলাদা করে ফিক্সড করে দিয়েছি, যাতে কেউ অন্যের জায়গায় জিনিস না রাখে। কিছুদিন ধরে
+          দেখছি
+          মিকদাদ ফ্রীজে আমার নির্দিষ্ট করা জায়গায় সে তার জিনিস রাখা শুরু করেছে। ফ্রীজে এতদিন আমার নিষেধের কারণে পাতিল
+          রাখত
+          না। এখন মাঝে মাঝে পাতিল রাখা শুরু করেছে। এই ছেলেকে ধরে ধরে শিখালাম কিভাবে দরজা বন্ধ করতে হয়, কিভাবে ক্লীন করতে
+          হয়, কিভাবে রান্না করতে হয়। এখন সে আমার বিরুদ্ধে লিখছে, আপনার কাছে? বাহ্ চমৎকার!
+        </p><br>
+
+      </div>
+
+
+      <!-- Gallery Section -->
+      <div class="portfolio section light-background">
+
+        <!-- Gallery Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <p>নিচে কিছু স্ক্রীণশট দেয়া হল</p><br>
+        </div><!-- End Gallery Title -->
+
+        <div class="container">
+
+          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+            <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-product">Product</li>
+            </ul><!-- End Portfolio Filters -->
+
+            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h3>App 1</h3><br>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p><br>
+                    <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                        class="bi bi-link-45deg"></i></a>
+                  </div>
                 </div>
-              </div><!-- End Info Item -->
+              </div><!-- End Portfolio Item -->
 
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Call Us</h3>
-                  <p>+1 5589 55488 55</p>
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h3>Product 1</h3><br>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p><br>
+                    <a href="assets/img/portfolio/product-1.jpg" title="Product 1"
+                      data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
+                        class="bi bi-zoom-in"></i></a>
+                    <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                        class="bi bi-link-45deg"></i></a>
+                  </div>
                 </div>
-              </div><!-- End Info Item -->
+              </div><!-- End Portfolio Item -->
 
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email Us</h3>
-                  <p>info@example.com</p>
-                </div>
-              </div><!-- End Info Item -->
+            </div><!-- End Portfolio Container -->
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
           </div>
 
-          <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
+        </div>
 
-                <div class="col-md-6">
-                  <label for="name-field" class="pb-2">Your Name</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required="">
+      </div>
+      <!-- /Gallery Section -->
+
+
+    </section>
+    <!-- /Section 5-->
+
+    <!-- Section 6-->
+    <section id="6" class="about section">
+
+      <div class="container section-title" data-aos="fade-up">
+
+        <h3>
+          ৬। জালালকে নিয়ে কিছু কথা
+        </h3><br><br>
+
+        <p>
+          প্রশ্ন: জালালের সাথে কি আমার ব্যক্তিগত কোন ঝামেলা আছে?
+          উত্তর: বর্ষণ এবং তানজিদের বিষয় নিয়ে জালালের সাথে বিভিন্ন সময় আমার ঝামেলা হয়েছে। আপনিও জানেন, তানজিদ আমাকে
+          মারার
+          জন্য আমার রুমে ঢুকে গেছিল। আমি পুলিশকে জানাই, জলালকে দোষারোপ করি। পরে পুলিশ এসে জালালকে লাথি দিয়েছিল কারণ
+          জালালের দোষ ছিল। জালালের আমার উপর রাগ থাকতে পারে, এটাই স্বাভাবিক। কিন্তু এখানে আমার কোন ব্যক্তিগত কারণ কখনোই
+          ছিল
+          না।
+        </p><br>
+
+        <p>
+          লাস্ট যেই কাজের মেয়ে রেখেছিলাম, জালাল এই মেয়েটাকে নিয়ে আসছিল। কম বয়সী, বিবাহিত, সুন্দরী এবং ভাল মেয়ে। জালালের
+          ভাল লেগেছে তাই বিনা কারণে মেয়েটাকে ব্যক্তিগত ফোন দিত, মোবাইলে টাকা পাঠাতো। মেয়েটা আমার কাছে বিচার দিত এই জন্য।
+          কম বয়সী হওয়ার কারণে মেয়েটা প্রতিবাদী ছিল এবং জালালের মুখের উপর এগুলো বলে দিত। তারপর থেকে জালাল মেয়েটাকে সহ্যই
+          করতে পারত না। এরপর মেয়েকে জুতা চুরি করে বলে, আমার কাজের মেয়েকে সে মানা করে দিল, গেইট খুলত না। একটা সিকিউরিটি
+          গার্ড কি পারে আমার বাসার কাজের মেয়েকে আমার অনুমতি না নিয়ে নিষেধ করে দিতে? আমি বার বার এই জালালকে রিকোয়েস্ট
+          করার
+          পরও সে কাজের মেয়েকে গেইট খুলে দেয় নি। মেয়েটা আধা ঘন্টা দাঁড়িয়ে ছিল। মেয়ের অভিযোগ সব সত্যি, তখন আমি নিশ্চিত হয়ে
+          গেছি। সিরাজ মিয়াকে কিছু একটা বুঝিয়ে রাজি করাল, যাতে মেয়েটা ঢুকতে না পারে। সিরাজ মিয়াকে আমি বার বার বলেছি, জুতা
+          চুরি করলে প্রমাণ দেখান। বলল, কোন প্রমাণের দরকার নেই। আমি বলালাম, নেক্সট টাইম সে যদি চুরি, এই টাকা আমি দেব।
+          সিরাজ
+          মিয়ার এক কথা, এই মেয়ে ঢুকতে পারবে না। আমার বাসার কাজের মেয়েকে এরা মিথ্যা অপবাদ দিয়ে ঢুকতে দেয় নি। এগুলো আপনাকে
+          আমি জানায় নি। শুধু বলেছি, কাজের মেয়ে আসে না। সেটা সত্যি ছিল না। হোয়াটসএপ হিস্টোরিতে আপনি পাবেন। সিরাজ মিয়া
+          যদিও
+          আমার কথা শোনে নি, কিন্তু এই কথা সিরাজ মিয়াকে বলার কারণে জালাল আমার উপর আরো রেগে গেছে। গরীব মানুষ, সিকিউরিটি
+          গার্ড এজন্য সরাসরি আমাকে কিছু কখনো বলে না। কিন্তু আমি বুঝতে পারি।
+        </p><br>
+
+        <p>
+          আপনি প্রতিবার রুম ভাড়ার বিজ্ঞাপনের ব্যপারে জালালের কাছ থেকে হেল্প নেয়ার কথা বলেন শুরুর দিকে সে আমাকে হেল্প
+          করত।
+          এখনতো প্রশ্ন আসে না। শুধুমাত্র আপনি সরাসরি তাকে কমান্ড করলে, তখন অনিচ্ছা সত্ত্বেও সে করে, সেটা আমি ভালোভাবে
+          বুঝতে পারি। এর পেছনের কারণ শুধু আমি না। বর্ষণ, তানজিদের জন্য তাকে বিনা কারণে অনেক ভুগতে হয়েছে। এটাও
+          গুরুত্বপূর্ণ
+          কারণ। গরীব মানুষ, আপনি প্রায় সময় তাকে হেল্প করেন টাকা দিয়ে। সে তো আমাদের মত যা ইচ্ছা তা করতে পারবে না, বলতেও
+          পারবে না। জালালের প্রতি আমার পূর্ণ সহানুভূতি আছে। যত যাই হোক, সে আমাকে হেল্প করে ইলেক্ট্রিক বিল, সার্ভিস
+          চার্জের
+          বিষয়ে।
+        </p><br>
+
+
+      </div>
+
+    </section>
+    <!-- /Section 6-->
+
+    <!-- Section 7-->
+    <section id="7" class="about section">
+
+      <div class="container section-title" data-aos="fade-up">
+
+        <h3>
+          ৭। সিরাজ মিয়াকে নিয়ে কিছু কথা
+        </h3><br>
+
+        <p>
+          প্রশ্ন: সিরাজ মিয়ার সাথে কি আমার ব্যক্তিগত কোন ঝামেলা আছে?
+          উত্তর: ৪ বছর আগে যখন প্রথম আমাকে সার্ভিস চার্জ দিতে বলেছিলেন তার আগে, আমি সিরাজ মিয়াকে বলেছিলাম, আন্টি এখনো
+          টাকা
+          পাঠায় নি, পাঠালে দিয়ে দেব। আমার উত্তরে বাজে ভাবে রিপ্লাই দিয়েছিল এই সিরাজ মিয়া। তখন নতুন ছিলাম, বুঝতে পারি নি
+          এবং অবাক হয়ে গেলাম। এখন বুঝি, তার এখানে বড় স্বার্থ আছে, না হলে সে বিনা কারণে আমার সাথে কেন এভাবে রিপ্লাই দেবে?
+        </p><br>
+
+
+        <p>
+          আামাদের গ্যারেজ ভাড়া দেব, এই লোক দেয় নি। যে কাহিনী সেদিন এই লোক করেছে, আপনি দেখলে, আপনার ভয়ংকর মেঝাঝ খারাপ হয়ে
+          যেত। এখানে ভাড়া হলে, আমার স্বার্থ কি? এটাতো আপনার স্বার্থে আমি কথা বলেছি। লাস্ট মাসে আপনি বলেছেন, ভাড়ার পুরো
+          টাকা জুলি আন্টিকে দিয়ে দিতে, এমনকি আমি সার্ভিস চার্জ রেখে দেয়াতে আপনি মাইন্ড করেছেন। সিরাজ সাহেবকে আমি বলেছি,
+          টাকা আন্টি পাঠালে তখন দিতে পারবো। তখন আমাকে বলেছে, "সময় মত সার্ভিস চার্জ দিতে না পারলে, আমার বাসা (সিরাজ
+          সাহেবের
+          বাসা) থেকে চলে যাও"। আমি সোজাসুজি বলেছি, "আপনার বাসা মানে কি? নেক্সট টাইম আমার সাথে এভাবে কথা বলবেন না। যা
+          বলার
+          আন্টিকে বলবেন।" এই লোক চাচ্ছে বাসার দায়িত্ব নিজে নিতে। আপনার বাসা কিনে নিতে। এই লোক নিশ্চই আমার সাথে ফেরেশতার
+          মত
+          আচরণ করবে না! আমার এই ধরণের স্ট্রেইট ফরোয়ার্ড রিপ্লাইয়ের পর থেকে সিরাজ মিয়া আমার সাথে ডিরেক্টলি কোন কথা বলে
+          না।
+          সার্ভিস চার্জের বিষয়ে জালালকে দিয়ে ফোন করায়। সিরাজ মিয়ার সাথে আমার ব্যক্তিগত কারণে কোন ঝামেলা নেই।
+        </p><br>
+
+      </div>
+
+    </section>
+    <!-- /Section 7-->
+
+    <!-- Section 8-->
+    <section id="8" class="about section">
+
+      <div class="container section-title" data-aos="fade-up">
+
+        <h3>
+          ৮। আমার বিরুদ্ধে করা কিছু অভিযোগ
+        </h3><br>
+
+        <p>
+          প্রশ্ন: আমি কি লাইট জ্বালিয়ে রাখি?
+          উত্তর: প্রতিদিন আমি সকালে ঘুম থেকে উঠে একবার চেক করি লাইট জ্বালানো আছে কি না, দুপুরে বাসায় থাকলে রান্নার সময়
+          লাইট জ্বালিয়ে রেখে রান্নার পর অফ করে দেই, রাতে ঘুমানোর আগে চেক করি কোন লাইট জ্বালানো আছে কি না। কোন লাইট
+          বেশিক্ষণ জ্বলতে থাকলে, সেটা অফ করে অন্য লাইট জ্বালিয়ে দেই। এই কাজ আমি প্রতিদিন করি, যাতে লাইট গরম হয়ে নষ্ট হয়ে
+          বা ফেটে না যায়।
+        </p><br>
+
+        <p>
+          প্রশ্ন: আমি কি বেকার, ঘরে বসি ভিডিও গেমস খেলি? আমার পোশাক, আচরণ কেন অন্যদের থেকে আলাদা?
+          উত্তর: আপনি তো জানেন আমি বাটা তে ম্যানেজার হিসেবে কাজ করেছি। তার আগে ASM Chemical এ আইটি ডিপার্টমেন্টের হেড
+          ছিলাম। এই যে আপনি আমার লেখা এবং ডকুমেন্ট গুলো পড়ছেন, আমি একটা ওয়েবসাইট ডেভেলপ করে ইনফরমেশন গুলো সেখানে আপলোড
+          করে আপনাকে দিয়েছি। আপনি একটা লিংকের মাধ্যমে সেই ওয়েব সাইটে ঢুকে এগুলো পড়ছেন। এই কাজটা আমি যদি একটা কর্পোরেট
+          প্রতিষ্ঠানের জন্য করে দেই, তারা আমাকে ২০ থেকে ৫০ হাজার টাকা দেবে। আমি বিভিন্ন প্রতিষ্ঠানে ফাইন্যান্স,
+          একাউন্টিং
+          এবং ইআরপি সফটওয়ার সেল করি। তাদের একাউন্ট্যান্ট, এইচ.আর সহ পুরো টিমকে সেই সফটওয়ারের উপরে ট্রেনিং দেই। বুঝতেই
+          পারছেন, আমার পোশাক, আমার ফ্যাশন, আমার কালচার, আমার আচরণ কখনো মসজিদের ইমামের মত হবে না। আমি হাফপ্যান্ট পরে
+          বাহিরে
+          যাই, লম্বা স্টাইলিশ চুল ঝুঁটি করে পরি, রেগুলার হয়তো নামায পড়া হয় না এসব বিষয়ের কারণে ধর্মীয় উগ্রবাদীরা কখনোই
+          আমাকে পছন্দ করবে না। অথচ এগুলো আমার একান্তই ব্যক্তিগত ব্যাপার।
+        </p><br>
+
+        <p>
+          প্রশ্ন: আমি কি ভাড়া কালেকশন করে টাইম মত আপনাকে দেই না?
+          উত্তর: আপনি যদি হোয়াটসএপপ হিস্ট্রি চেক করেন, যে যখনই আমাকে টাকা দিয়েছে আমি আপনাকে সেটা হোয়াটসএপে জানিয়ে
+          দিয়েছি।
+          বাহিরে ব্যস্ত থাকলে বাসায় এসে জানিয়ে দিয়েছি। পুরো টাকা কালেকশন হলে সেটাও দিয়ে দিচ্ছি। আমি এক্সেল শীট মেইনটেইন
+          করি হিসাবের জন্য।
+        </p><br>
+
+
+        <!-- Gallery Section -->
+        <div class="portfolio section light-background">
+
+          <!-- Gallery Title -->
+          <div class="container section-title" data-aos="fade-up">
+            <p>নিচে কিছু স্ক্রীণশট দেয়া হল</p><br>
+          </div><!-- End Gallery Title -->
+
+          <div class="container">
+
+            <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+              <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-app">App</li>
+                <li data-filter=".filter-product">Product</li>
+              </ul><!-- End Portfolio Filters -->
+
+              <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                  <div class="portfolio-content h-100">
+                    <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <h3>App 1</h3><br>
+                      <p>Lorem ipsum, dolor sit amet consectetur</p><br>
+                      <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                        class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                      <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                          class="bi bi-link-45deg"></i></a>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                  <div class="portfolio-content h-100">
+                    <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <h3>Product 1</h3><br>
+                      <p>Lorem ipsum, dolor sit amet consectetur</p><br>
+                      <a href="assets/img/portfolio/product-1.jpg" title="Product 1"
+                        data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
+                          class="bi bi-zoom-in"></i></a>
+                      <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                          class="bi bi-link-45deg"></i></a>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+              </div><!-- End Portfolio Container -->
+
+            </div>
+
+          </div>
+
+        </div>
+        <!-- /Gallery Section -->
+
+
+
+
+        <p>
+          প্রশ্ন: আমি কি বাসার কোন কাজ করি?
+          উত্তর: নিচের ছবি গুলো দেখে একটু আমাকে বলেন, ব্যাচেলর বাসায় কাজের মেয়ে নাই। তাহলে কিচেন, লাউন্জ, ফ্রীজ এত
+          পরিষ্কার কিভাবে আছে? আমি আলাদা করে কিচেন ফ্লোর ক্লীন করার জন্য কত গুলো জিনিস কিনেছি। নিচের ছবি গুলোর প্রত্যকটা
+          ক্লিনিং প্রডাক্ট আমার। এখন আপনি একটু চিন্তা করে বলেন, এই বাসায় কাজের মেয়ে না থাকা সত্ত্বেও কিভাবে এত ক্লীন
+          আছে?
+          কারো কাছে এই ধরণের জিনিস আছে কিনা একটু জিজ্ঞেস করলেই বুঝতে পারবেন পুরো বিষয়টি। আমি প্রতিদিন কিচেন একবার করে
+          ক্লীন করি। ফ্লোরে কোন ময়লা পড়ে থাকলে, সেটা এই আমি ছাড়া অন্য কেউ ফেলে না। ফ্রীজে অনেকের সবজি পঁচে যায়। সেটাও
+          আমাকে ফেলতে হয়। একমাত্র আমিই সবাইকে বিভিন্ন সময় মেসেজ দেই, "ভাই আপনি এই ময়লাটা ফেলে গেছেন, সম্ভব হলে একটু
+          ক্লীন
+          করে দিয়েন"। আরও স্ক্রীণশট দেখেন, যেখানে অন্যেরা একজন অন্যজনকে এগুলো নিয়ে বলে না, কারণ বলতে গেলে নিজে খারাপ হয়ে
+          যাবে। আমাকে দিয়ে বলায়।
+        </p><br>
+
+
+        <!-- Gallery Section -->
+        <div class="portfolio section light-background">
+
+          <!-- Gallery Title -->
+          <div class="container section-title" data-aos="fade-up">
+            <p>নিচে কিছু স্ক্রীণশট দেয়া হল</p><br>
+          </div><!-- End Gallery Title -->
+
+          <div class="container">
+
+            <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+              <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-app">App</li>
+                <li data-filter=".filter-product">Product</li>
+              </ul><!-- End Portfolio Filters -->
+
+              <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                  <div class="portfolio-content h-100">
+                    <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <h3>App 1</h3><br>
+                      <p>Lorem ipsum, dolor sit amet consectetur</p><br>
+                      <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                        class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                      <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                          class="bi bi-link-45deg"></i></a>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                  <div class="portfolio-content h-100">
+                    <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <h3>Product 1</h3><br>
+                      <p>Lorem ipsum, dolor sit amet consectetur</p><br>
+                      <a href="assets/img/portfolio/product-1.jpg" title="Product 1"
+                        data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
+                          class="bi bi-zoom-in"></i></a>
+                      <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                          class="bi bi-link-45deg"></i></a>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+              </div><!-- End Portfolio Container -->
+
+            </div>
+
+          </div>
+
+        </div>
+        <!-- /Gallery Section -->
+
+
+
+
+        <p>
+          প্রশ্ন: আমার বাড়ি কাকে এবং কবে বলেছিলাম?
+          উত্তর: শুধুমাত্র যারা রুম ভাড়া নিতে আসে, মার্কেটিং পারপাসে তাদেরকে বলি, এই বাসার পরিবেশ নিজেদের বাসার মতই
+          আপনার
+          কাছে মনে হবে। এখানে সোফা, ফ্রীজ, চেয়ার, ওভেন আছে। ব্যাচেলরদের বাসার মত নোংরা না। এই কথা গুলো মানুষকে আকৃষ্ট
+          করে
+          রুম ভাড়া নেবার জন্য। আমার ফ্ল্যাট এটা যদি জালাল বা সিরাজ মিয়াকে বলি, তখন এই অভিযোগ আমাকে করা যায়। আমি যে এমন
+          কথা
+          বলেছি, এটা ভিত্তিহীন কথা।
+        </p><br>
+
+        <p>
+          প্রশ্ন: আমি কি কাউকে বলেছি আপনাদের অনেক গোপন কথা জানি?
+          উত্তর: কেউ যদি এমন কথা বলে থাকে, তাহলে ডিরেক্টলি জিজ্ঞেস করতে পারেন, আমি কি গোপন কথা তাকে বলেছি? কোন উত্তর
+          পাবেন
+          না। আমি কখনোই এমন কোন স্পর্শকাতর কথা কাউকে বলি নি যেটার জন্য কেউ লজ্জিত হবে, এবং আমি নিজেও এমন কোন স্পর্শকাতর
+          বিষয় জানি না। এমনকি জালালকে জিজ্ঞেস করলেও এমন কোন কথা সে বলতে পারবে না আমাকে নিয়ে।
+        </p><br>
+
+      </div>
+
+    </section>
+    <!-- /Section 8-->
+
+    <!-- Section 9-->
+    <section id="9" class="about section">
+
+      <div class="container section-title" data-aos="fade-up">
+
+        <h3>
+          ৯। নিজেকে নিয়ে কিছু কথা
+        </h3><br>
+
+        <p>
+          আমি এখানে প্রায় ৪ বছর ধরে আছি। আপনি আমার ফ্যামিলি মেম্বারের সাথে কথাও বলেছেন। আমি পরিষ্কার-পরিচ্ছন্ন থাকতে এবং
+          ঘরের জিনিস-পত্র সঠিকভাবে ব্যবহার করতে পছন্দ করি। কেউ এর ব্যতিক্রম করলে তখনি আমার তার সাথে সমস্যা হয়।
+        </p><br>
+
+        <p>
+          মারুফ এখানে প্রায় বছর খানেক ধরে আছে ক্লীনিং এর জন্য সে কখনো কাজও করে নি, খরচ ও করে নি। মিকদাদ, অর্পন এখানে
+          প্রায়
+          ৫ মাস ধরে আছে। এরাও কখনো ক্লীন করে নি, কখনো খরচ ও করে নি। আমি ময়লা একদমই পছন্দ করি না। আমি নিজেই এই কাজ গুলো
+          করি। আমাকে কেউ আজকে পর্যন্ত এই কাজে হেল্প ও করে নি। লাস্ট ঈদে সবাই বাড়ি চলে গেলে, আমি পুরো বাসা ডীপ-ক্লীন করি।
+          ফ্রীজে কারও শাকসব্জী পঁচে গেলে আমি ফেলে দেই। এমনকি ফ্রীজে মাছ-মুরগীর রক্ত থাকলে সেটা পরিষ্কার করি। অন্যেরা
+          ফ্রীজ
+          ইউজ করে, সেখানে তাদের বাটি থেকে ফ্রীজে ঝোল পড়ে। সেটাও ক্লীন করি। ঘরের মধ্যে প্রচুর মাকড়সার বাসা হয়, সেটাও
+          ক্লীন
+          করি। এছাড়াও প্রতিদিন আমি একবার করে কিচেন ক্লীন করি। কিচেনের বেসিন, গ্যাসের চুলা, নিচে পড়ে থাকা ময়লা। নিচের ছবি
+          গুলো ভালো করে দেখলে বুঝতে পারবেন, যে ব্যাচেলর বাসায় ৫-৬ মাস কোন কাজের মেয়ে আসে না, ক্লীনিং এর কাজ অন্য কোন
+          ব্যাচেলর ছেলেরাও করে না। তাহলে এই ব্যাচেলর বাসা এত ক্লীন কিভাবে থাকে? এই ফ্ল্যাটের ফ্রীজ, ওভেন, চেয়ার, টেবিল,
+          সোফা, লাইট, ফ্যান এই সুবিধাগুলো আমার পাওয়ার কথা ছিল না। এটা আমার কৃতজ্ঞতাবোধ, যেটা আমি অন্যদের মধ্যে দেখি না।
+        </p><br>
+
+        <p>
+          সবাই আগে সঠিক সময়ে টাকা দিয়ে দিত। কিন্তু এখন দিচ্ছে না। বাসায় সবার দরজা বন্ধ দেখতে পাই, অন্ধকার করে রাখে।
+          এতদিন
+          সবাই যার যার দেখানো জায়গায় ফ্রীজে তাদের জিনিস রাখত। কিন্তু কিছুদিন ধরে দেখছি, কেউ না কেউ ফ্রীজে আমার স্পেসে
+          তাদের জিনিস রাখছে। আমি বুঝতে পারছি, ভেতরে ভেতরে হয়তো কিছু একটা হচ্ছে। আপনি আমাকে ইংগিত দেয়াতে কিছুটা ধারণা
+          পেলাম। আমি শুধু অবাক হলাম, এরা আমাকে বের করে দিতে চাচ্ছে শুনে।
+        </p><br>
+
+        <p>
+          প্রশ্ন: আমার ক্লীনিং আইটেম এর কালেকশন কেমন?
+          উত্তর: বাসায় শুধু ক্লীনিংয়ের জন্য আমার কালেকশন আপনাকে দেখাচ্ছি। নিচের ছবি গুলো দেখেন। এগুলো সব আমার নিজের
+          টাকায়
+          কেনা। আমার এখানে ছোট বড় বিভিন্ন সাইজের ৯ টা মপ। ক্লীনিং করার বিভিন্ন ব্রাশ। ঘষা-মাজা করার জন্য আরো বিভিন্ন
+          জিনিস। স্প্রে করার বিভিন্ন বোতল এবং মেডিসিন। মাকড়সার বাসা পরিষ্কারের মপ। কয়েকটা মপ দিয়ে আমি নিজের রুম ক্লীন
+          করি।
+          কয়েকটা দিয়ে শুধু লাউন্জ, কিচেন ক্লীন করি। আপনি শুনলে অবাক হবেন, লাউন্জ এবং কিচেনে ডীপ ক্লীন যে মপ দিয়ে করি,
+          সেই
+          মপের কাপড় আমি আর ব্যবহার করি না, ফেলে দেই। এগুলো আলাদা করে ২০০ টাকা দিয়ে কিনতে হয়। নিজের রুম পরিষ্কারের
+          ক্ষেত্রে
+          কিন্তু আমি এভাবে ফেলে দেই। শুধুমাত্র অন্যদেের ময়লা যেই মপের কাপড় দিয়ে পরিষ্কার করি, সেটা একবার ব্যবহার করে
+          ফেলে
+          দেই। আমার কাছে এমনকি আপনার রুম ভাড়ার বিজ্ঞাপন দেয়ালে লাগানোর জন্য আলাদা ব্রাশ এবং আঠা রাখার আলাদা পট কিনে নিয়ে
+          আসছি।
+        </p><br>
+
+        <p>
+          প্রশ্ন: দায়িত্বপ্রাপ্ত ব্যক্তিকে কেন অন্যেরা পছন্দ করে না?
+          উত্তর: একটা অফিসের ম্যানেজার বা এইচ.আরকে কেউ পছন্দ করে না তার দায়িত্বের কারণে। তাকে সবাইকে কমান্ড করতে হয়। এই
+          বাসায় ক্লীনিং, জিনিসপত্র ঠিক রাখা, লাইট ঠিক সময় বন্ধ করে দেয়া, দরজা ঠিকভাবে লক করা এগুলো আমি ছাড়া অন্য কেউ বলে
+          না। কেউ যখন উল্টাপাল্টা করে তখন আমিই তাদেরকে বলি, সেটা কারেকশন করতে। এটা কেউই ভালোভাবে নেয় না। নিচে কিছু ছবি
+          দিলাম, যেখানে মারুফ, মিকদাদ, অর্পণ তারা যখন ভুল কাজ করেছে সেগুলো কারেকশন করার জন্য তাদের বলেছি। এটা কেউ পছন্দ
+          করবে না। এই দায়িত্ব যে নেয়, তাকে কেউ ব্যাচেলর বাসায় পছন্দ করবে না, এটাই স্বাভাবিক।
+        </p><br>
+
+
+
+        <p>
+          প্রশ্ন: আমি কখন এবং কার বিরুদ্ধে সাধারণত অভিযোগ দেই? আমার অভিযোগের বিষয়গুলো কি নিয়ম-শৃংখলা সম্পর্কিত হয় নাকি
+          ব্যাক্তিগত উদ্দেশ্য নিয়ে হয়? আমার কম্পলেইনের বিষয়গুলো কি আমার স্বার্থ রক্ষা সম্পর্কিত হয় নাকি আপনার স্বার্থ
+          সম্পর্কিত হয়?
+          উত্তর: আমার কমপ্লেইনের বিষয়গুলো সব সময় হয়, আপনার স্বার্থ সংশ্লিষ্ট বিষয়ে যেন আপনার সম্পদের ক্ষতি না হয়, সবার
+          স্বার্থ সংশ্লিষ্ট - যেখানে একজনের কারণে যেন অন্য জন কষ্টভোগ না করে। আমার ব্যক্তিগত পছন্দ-অপছন্দের বিষয় হলে,
+          আমি
+          কখনো অভিযোগ দেই না। কারো মন বিষিয়ে তুলি না অন্য আরেকজনের বিরুদ্ধে। চার বছর আগে ২ টা স্টুডেন্ট ছিল ২ রুমে। তারা
+          কিচেন এবং ফ্রীজ টাকে ডাস্টবিন বানিয়ে রাখত, বাসায় মেয়ে নিয়ে আসত। আমি এগুলো করতে তাদেরকে নিষেধ করেছিলাম। আমি ছবি
+          তুলে, ভয়েস রেকর্ড করে আপনাকে দেখিয়েছিলাম। আমার সাথে তখন তাদের ঝামেলা শুরু হয়। মিকদাদের রুমে একটা বয়স্ক লোক
+          ভাড়া
+          ছিল। সেই লোক মদ খেয়ে বাসায় আসত রাতের ২-৩ টা বাজে। এত রাতে গেইট খোলা নিয়ে জালালের গায়ে হাত তুলেছে। প্রথম দিন
+          থেকেই আমার সাথে বাজে ব্যবহার শুরু করেছে। ভেজা প্যান্ট রকিং চেয়ারে ঝুলিয়ে রাখতো। রকিং চেয়ারের ফোম ভিজে যেত।
+          ঘরের
+          মধ্যে আন্ডারওয়ার পরে ঘুরত। আমি তার বিরুদ্ধে কমপ্লেইন করেছি। মাঝখানে রুম যখন খালি ছিল, তখন একটা ছেলে ভাড়া নিতে
+          চেয়েছে। আপনি অনুমতি দিয়েছিলেন। কিন্তু আমি পরে তাকে বের করে দেই, যখন বুঝতে পারি এই ছেলে সুবিধার লোক না। আপনাকে
+          সেটা জানিয়েছিলাম। সিরাজ মিয়া বা জালালকে নিয়ে কমপ্লেইন, সেটা আপনার স্বার্থ সংশ্লিষ্ট বিষয়। মারুফের বিষয়টা নিয়ে
+          বলতে চেয়েছিলাম। যেহেতু আমার উপর আপনার রাগ ছিল, এটা নিয়ে আর কখনোই কিছু বলি নি।
+        </p><br>
+
+
+      </div>
+
+
+      <!-- Gallery Section -->
+      <div class="portfolio section light-background">
+
+        <!-- Gallery Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <p>নিচে কিছু স্ক্রীণশট দেয়া হল</p><br>
+        </div><!-- End Gallery Title -->
+
+        <div class="container">
+
+          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+            <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-product">Product</li>
+            </ul><!-- End Portfolio Filters -->
+
+            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h3>App 1</h3><br>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p><br>
+                    <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                        class="bi bi-link-45deg"></i></a>
+                  </div>
                 </div>
+              </div><!-- End Portfolio Item -->
 
-                <div class="col-md-6">
-                  <label for="email-field" class="pb-2">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required="">
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h3>Product 1</h3><br>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p><br>
+                    <a href="assets/img/portfolio/product-1.jpg" title="Product 1"
+                      data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
+                        class="bi bi-zoom-in"></i></a>
+                    <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                        class="bi bi-link-45deg"></i></a>
+                  </div>
                 </div>
+              </div><!-- End Portfolio Item -->
 
-                <div class="col-md-12">
-                  <label for="subject-field" class="pb-2">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
-                </div>
+            </div><!-- End Portfolio Container -->
 
-                <div class="col-md-12">
-                  <label for="message-field" class="pb-2">Message</label>
-                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
+          </div>
 
         </div>
 
       </div>
+      <!-- /Gallery Section -->
 
-    </section><!-- /Contact Section -->
+
+
+    </section>
+    <!-- /Section 9-->
+
+    <!-- Section 10-->
+    <section id="10" class="about section">
+
+      <div class="container section-title" data-aos="fade-up">
+
+        <h3>
+          ১০। পুরোনো কিছু কথা
+        </h3><br>
+
+        <p>
+          প্রশ্ন: জুলি আন্টির সাথে ছবি তোলা, কথা রেকর্ড করা নিয়ে কেন সমস্যা হয়েছিল, এটা কি আমার ইচ্ছাকৃত কোন দোষ ছিল?
+          উত্তর: বাসায় সবার কাছ থেকে যখন টাকা লেনদেন করি, সবাইকে বলে দিয়েছি, হোয়াটসএপে আমাকে একটা মেসেজ পাঠিয়ে দিতে যে,
+          আমি এত টাকা আপনাকে এই উদ্দ্যেশে দিয়েছি। তখন আমি একটা রিপ্লাই দেব যে, হ্যাঁ আমি এত টাকা এই পারপাসে বুঝে পেয়েছি।
+          একটা স্ক্রীণশট নিয়ে রাখি। এটা হচ্ছে ডিজিটাল সিগন্যাচার। এইজন্য বাসায় এইগুলো নিয়ে কখনো প্রবলেম ফেইস করতে হয় না।
+          কিন্তু জুলি আন্টি তো আমাদের মত আপডেট না। আমি জুলি আন্টিকে হোয়াটসএপে এত টাকা রিসিভ করেছে এটা লিখে দিতে
+          বলেছিলাম।
+          অথবা ভয়েস মেসেজ পাঠিয়ে দিলেও হবে। অথবা মোবাইল থেকে নরমাল মেসেজ করলেও হবে। উনি কোনটাই করতেন না। শুধু বলতেন,
+          আপাকে
+          জানিয়ে দিয়েছি। কিন্তু টাকা তো আমার কাছ থেকে নিয়েছেন। আমার তো একটা প্রমান দরকার। তাই শুরুতে ছবি তুলে রাখতাম।
+          পরে
+          সেটা বাদ দিয়ে, অডিও রেকর্ড করে রাখতাম। এখন এগুলো কোনটাই করি না। সরাসরি সিগনেচার নেই, আপনি যেভাবে বলেছেন।
+          আমাদের
+          এই জেনারেশন ব্যাংক ট্রান্সেকশন, হোয়াটসএপ এইগুলো ভালো বুঝে। এটা আমার ইচ্ছাকৃত কোন দোষ ছিল না।
+        </p><br>
+
+        <p>
+          প্রশ্ন: ২ বছর আগে ১০ হাজার টাকা নিয়ে আপনার সাথে একটা ভুল বোঝাবুঝি কেন হয়েছিল?
+          উত্তর: সেই সময় আপনি ব্যাংকে টাকা পাঠাতেন। ভাড়ার টাকার আলাদা হিসাব হত। বর্ষন ভাই এর আলাদা হিসাব ছিল। আপনি আমাকে
+          বলেছিলেন আমার কাছে ১০,০০০ টাকা পান। কিন্তু আমার কাছে সেই হিসাবটা ছিল না। আমি আপনাকে বলেছিলাম আপনি কোন টাকা পান
+          না আমার কাছে। যদি পেয়ে থাকেন আমাকে স্ক্রীণশট টা দেন অথবা আপনার রেফারেন্সটা দেন। আপনি রেগে গেছিলেন এটা নিয়ে।
+          পরে
+          সময় করে সেটা বের করে যখন আমাকে দিলেন, সাথে সাথে আমি ডিটেইলস বের করে ফেলেছি এবং বলেছি, আপনার কথাই সঠিক।
+        </p><br>
+
+      </div>
+
+    </section>
+    <!-- /Section 10-->
+
+    <!-- Section 11-->
+    <section id="11" class="about section">
+
+      <div class="container section-title" data-aos="fade-up">
+
+        <h3>
+          ১১। এই দ্বন্দ্ব বা সংঘাতের শেষ কোথায়
+        </h3><br>
+
+        <p>
+          উগ্র জংগীবাদী মারুফকে ৮ মাস আগে বলেছিলাম একসাথে মিলেমিশে থাকতে, কিন্তু সে আমার কথা শোনে নি। হোয়াটসএপের
+          স্ক্রীণশট
+          এবং অডিও রেকর্ড দুটোই আছে, যেগুলো উপরে দেখিয়েছি। তখন থেকে কন্টিনিউয়াসলি সে নানা রকম বাজে কাজ করে যাচ্ছে। বাসায়
+          যেই আসুক, গ্রুপিং করে ফেলছে। নতুন কেউ আসলেও তাই করতে থাকবে। যেখানে সে বিনা কারণে আমাকে মারতে আসছে এবং আমি তার
+          পরদিন বিনীত ভাবে তাকে বুঝিয়েছি, এগুলো করলে আমরা এখানে থাকতে আনকমফোর্টেবল ফিল করব। সেই অবস্থায় যখন সে বিরত হয়
+          নি,
+          আন্টি আপনি সেখানে তাকে কোনভাবেই থামাতে পারবেন না।
+        </p><br>
+
+        <p>
+          এই ধরণের উগ্রবাদী জংগীরা যে কাউকে, নারায়ে তাকবীর বলে মেরে ফেলতে ১ সেকেন্ড ও চিন্তা করবে না। আগে থেকে এই ধরণের
+          উগ্রবাদীদের ব্যপারে কোন প্রেডিকশন করা যায় না, এরা সাধারণ মানুষের সাথে মিশে যায়। এদের চেনা যায় তাদের কথা, আচরণ,
+          হাবভাব থেকে। এই উগ্র জংগীবাদী মারুফ অলরেডী আমাকে নাস্তিক ডাকা শুরু করেছে। আমি হাফ প্যান্ট পরি, সেটা নিয়ে কথা
+          বলছে। আমার চুল লম্বা, সেখানেও তার সমস্যা। তার রুমের পাশে গেলেই ওয়াজ শোনা যায়। যে কোন সময় আমাকে আল্লাহর নাম
+          জবাই
+          করে ফেলা, অসম্ভব কোন ঘটনা না।
+        </p><br>
+
+        <p>
+          আপনি দেখেছেন, অর্পন বড়ালের জন্য আমি কি করেছি। যেখানে আমার কোন দোষ নেই, তারপরও সে যেভাবে আমার উপর ক্ষিপ্ত হয়ে
+          আপনার কাছে ভয়ংকর মেসেজ দিচ্ছে, সে কখনো আমাকে একসেপ্ট করতে পারবে না।
+        </p><br>
+
+        <p>
+          ফ্রীজে আমি খাবার রাখি। সেই খাবারে কেউ বিষ মিশিয়ে দিলে আমার কিছু করার থাকবে না।
+        </p><br>
+
+        <p>
+          উগ্র জংগিবাদী মারুফ, অর্পন বড়াল, মিকদাদ এদের প্রত্যকের নিজের ফেলা ময়লা আমি ক্লীন করেছি এবং প্রতিদিন করি।
+          তারপরও
+          যদি এরা আমাকে পছন্দ না করে, কখনোই আর পারবে না। এই সংঘাত চলতে থাকবে। নিচের ছবিতে দেখেন, এখানে একটাও আমার জিনিস
+          নেই। সব অন্যদের। এখানে তেলাপোকা হয়ে খুব বাজে অবস্থা হয়ে যায়। এটা আমি ছাড়া অন্য কেউ আজ পর্যন্ত ক্লীন করে নি।
+        </p><br>
+
+        <p>
+          একটা প্রতিষ্ঠানে কেউ যদি বলে, আমি ম্যানেজারকে না মেনে নিজেই সেই কাজ করবো। সেই প্রতিষ্ঠানের শুধু ক্ষতি হয়। এরা
+          আমার কাছে ভাড়ার টাকা জমা দেবে না, আমার কথা শুনবে না। এর মানে হচ্ছে, আপনার জন্য অশুভ সংকেত।
+        </p><br>
+
+      </div>
+
+      <!-- Gallery Section -->
+      <div class="portfolio section light-background">
+
+        <!-- Gallery Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <p>নিচে কিছু স্ক্রীণশট দেয়া হল</p><br>
+        </div><!-- End Gallery Title -->
+
+        <div class="container">
+
+          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+            <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-product">Product</li>
+            </ul><!-- End Portfolio Filters -->
+
+            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h3>App 1</h3><br>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p><br>
+                    <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                        class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h3>Product 1</h3><br>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p><br>
+                    <a href="assets/img/portfolio/product-1.jpg" title="Product 1"
+                      data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
+                        class="bi bi-zoom-in"></i></a>
+                    <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                        class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+            </div><!-- End Portfolio Container -->
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- /Gallery Section -->
+
+
+
+    </section>
+    <!-- /Section 11-->
+
+
 
   </main>
 
@@ -791,28 +1419,26 @@
 
     <div class="container">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Family Cottage</strong> <span>All Rights
+            Reserved</span>
+        </p><br>
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
+        Designed by <a href="#">Mr. Cyber Bloom</a> Developed by <a href="#">Family Cottage</a>
       </div>
     </div>
 
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
